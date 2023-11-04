@@ -1,8 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { useEffect } from "react";
-import { createConnection } from "./pages/page2";
-import TodoList from "./pages/page1";
+
 
 
 
@@ -13,7 +12,6 @@ function ExampleComponent() {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    // Этот код выполнится после каждого рендера компонента
     document.title = `Вы кликнули ${count} раз`;
   });
 
@@ -26,6 +24,8 @@ function ExampleComponent() {
 }
 
 export default ExampleComponent;
+
+
 
 
 
